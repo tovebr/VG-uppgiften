@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d072926b66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <title>Inlämning 2</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- User input - firstname -->
+            <div class="fname">
+                <p class="error fields-error"></p>
+                <label for="first-name">Förnamn</label>
+                <input type="text" id="first-name">
+            </div>
+            <!-- User input - lastname -->
+            <div class="lname">
+                <label for="last-name">Efternamn</label>
+                <input type="text" id="last-name">
+            </div>
+            <!-- User input - age -->
+            <div class="age">
+                <label for="age-input">Ålder</label>
+                <input type="number" id="age-input">
+            </div>
+            <!-- User input - superhero -->
+            <div class="superhero">
+                <label for="superhero-input">Är du superhjälte?</label>
+                <input type="checkbox" id="superhero-input">
+            </div>
+            <!-- User input - superheroname -->
+            <div class="super-name">
+                <label for="superhero-name">Om ja, vad är ditt superhjältenamn?</label>
+                <input type="text" id="superhero-name">
+                <p class="error hero-error"></p>
+            </div>
+            <!-- button to submit -->
+            <button type="submit" id="submit-btn">Spara ny person</button>
+        </form>
+        <!-- Buttons for doing things -->
+        <div class="btns">
+            <button id="birthday">Födelsedag</button>
+            <button id="greet">Hälsa</button>
+            <button id="clear-all">Radera alla</button>
+        </div>
+        <!-- div to print info in -->
+        <div id="output">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(224, 224, 224);
+}
+
+.container {
+  width: 1000px;
+  background-color: rgb(250, 248, 245);
+  margin: auto;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  top: 3rem;
+  padding: 1rem;
+  background-color: rgb(238, 187, 238);
+  position: relative;
+  border-radius: 5px;
+}
+
+form > div {
+  margin: 0.5rem;
+}
+
+form div:nth-child(1) {
+  padding-top: 1rem;
+}
+
+input {
+  float: right;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.hero-error {
+  margin-top: 0.2rem;
+}
+
+.fields-error {
+  margin: 0;
+  position: absolute;
+  top: 1rem;
+}
+
+.label-error {
+  font-weight: bolder;
+}
+
+button {
+  width: 20vw;
+  margin: 1rem auto 1rem auto;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(101, 57, 143);
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px #333;
+  border-radius: 5px;
+  transform: translate(0, 0);
+  transition: all 0.2s;
+}
+
+button:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0px 0px 0px #333;
+}
+
+#submit-btn {
+  max-width: 300px;
+}
+
+#output {
+  margin: auto;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  width: 60vw;
+}
+
+#greetings,
+#persons {
+  background-color: rgb(171, 245, 245);
+  border-radius: 5px;
+}
+
+#greetings {
+  margin-top: 2rem;
+}
+
+#persons > p,
+#greetings > p {
+  padding: 3rem 2rem 0 3rem;
+}
+
+#greetings p:last-child,
+#persons p:last-child {
+  padding-bottom: 3rem;
+}
+
+#persons i {
+  float: right;
+  padding-left: 1rem;
+}
+#persons i:hover {
+  color: red;
+}
+
+.btns {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#greet,
+#birthday,
+#clear-all {
+  width: 8rem;
+  font-size: 1rem;
+}
